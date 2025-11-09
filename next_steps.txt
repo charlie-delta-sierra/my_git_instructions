@@ -1,0 +1,33 @@
+# exemplo de estrutura de pastas
+# = = = = = = = = = = = = = = = =
+
+: gemini 2025-11-09
+: este é um arquivo pessoal, por isso no meu idioma
+
+.
+├── docs/                       # O QUE e POR QUÊ (Conceitos, Práticas)
+│   ├── commit-messages.md      # Melhores práticas de mensagens de commit (Criado acima)
+│   ├── branching-models.md     # Explicações sobre Git Flow, Trunk-Based, dev/main
+│   ├── atomic-commits.md       # O conceito de commits atômicos
+│   └── code-review.md          # Guia para participar de Pull Requests
+│
+├── guides/                     # COMO FAZER (Tutoriais práticos, Comandos)
+│   ├── 1-setup-and-init.md     # Criação do repo e configuração básica
+│   ├── 2-local-workflow.md     # add, commit, amend, restore
+│   ├── 3-remote-sync.md        # push, pull, fetch, e solução de conflitos básicos
+│   ├── 4-rewriting-history.md  # Rebase, reset --soft/--hard, cherry-pick
+│   └── 5-troubleshooting.md    # Como lidar com arquivos grandes, reflog, etc.
+│
+├── .gitignore                  # Arquivo padrão
+├── LICENSE                     # Sua licença
+└── README.md                   # Visão geral do projeto (que você já criou)
+
+Explicação da Estrutura
+docs/ (Conceitual): Contém os documentos que explicam as melhores práticas e os 
+modelos por trás dos comandos. É mais focado em disciplina e filosofia.
+
+guides/ (Prático/Tutorial): Contém os guias passo a passo e as instruções diretas 
+de comandos Git, ordenados numericamente (ex: 1-, 2-) para garantir um fluxo de aprendizado lógico e fácil de seguir.
+
+Essa separação ajuda o usuário (e você) a distinguir entre a regra (docs/) 
+e a ferramenta (guides/).
