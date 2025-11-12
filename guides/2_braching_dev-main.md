@@ -24,6 +24,7 @@ This guide outlines a 4-step process for developing on an isolated branch (`dev`
 | :--- | :--- | :--- |
 | **2** | go to `dev` <br> develop, commit | `git checkout dev` <br> `git add .` + `git commit -m <message>` + `git push -u origin dev` |
 | **3** | when `dev` is<br>ready to deployment | `git checkout main` + `git pull origin main` + `git merge dev` <br> `git add .` + `git commit -m <message>` + `git push -u origin main`|
+| | graph | use git log as following to see the commits <br> `git log --oneline --graph --all` |
 | **loop** | continue developing | `git checkout dev` + `git merge main` <br> some develoment and back to **STEP 2: git add . , git commit, git push** |
 
 </div>
